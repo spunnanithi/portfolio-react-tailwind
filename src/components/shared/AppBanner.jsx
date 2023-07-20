@@ -23,8 +23,8 @@ const AppBanner = () => {
 						delay: 0.1,
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-ternary-light uppercase">
-					{/* text color indigo 400 hex value */}
-					Hello! I'm <span style={{ color: "#5C6BC0" }}>Sirasit</span>
+					{/* text color blue 700 hex value */}
+					Hello! I'm <span style={{ color: "#1976D2" }}>Sirasit</span>
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
