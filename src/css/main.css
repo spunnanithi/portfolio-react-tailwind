@@ -703,6 +703,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-b {
 	border-bottom-width: 1px;
 }
+.border-b-2 {
+	border-bottom-width: 2px;
+}
 .border-t-2 {
 	border-top-width: 2px;
 }
@@ -1073,6 +1076,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:underline:hover {
 	text-decoration-line: underline;
+}
+.hover\:scale-110:hover {
+	transition: transform 330ms ease-in-out;
+	transform: scale(1.1);
 }
 .hover\:shadow-xl:hover {
 	--tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),

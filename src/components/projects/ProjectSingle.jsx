@@ -12,12 +12,12 @@ const ProjectSingle = ({ title, category, image, description }) => {
 				delay: 0.15,
 			}}>
 			<Link to="/projects/single-project" aria-label="Single Project">
-				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer hover:scale-110 mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
 						<img
 							src={image}
 							style={{ height: "17em", width: "30em" }}
-							className="rounded-t-xl border-none"
+							className="rounded-t-xl border-b-2"
 							alt="Single Project"
 						/>
 					</div>

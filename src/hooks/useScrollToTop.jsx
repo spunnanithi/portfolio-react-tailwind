@@ -34,7 +34,7 @@ const useScrollToTop = () => {
 	return (
 		<>
 			<FiChevronUp
-				className="scrollToTop"
+				className="scrollToTop animate-bounce"
 				onClick={backToTop}
 				style={{
 					height: 45,
