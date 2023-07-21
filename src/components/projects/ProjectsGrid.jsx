@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import { FiSearch } from 'react-icons/fi';
-import ProjectSingle from './ProjectSingle';
-import { ProjectsContext } from '../../context/ProjectsContext';
-import ProjectsFilter from './ProjectsFilter';
+import { useContext } from "react";
+import { FiSearch } from "react-icons/fi";
+import ProjectSingle from "./ProjectSingle";
+import { ProjectsContext } from "../../context/ProjectsContext";
+// import ProjectsFilter from "./ProjectsFilter";
 
 const ProjectsGrid = () => {
 	const {
@@ -19,21 +19,20 @@ const ProjectsGrid = () => {
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
 			<div className="text-center">
 				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-					Projects portfolio
+					Projects Portfolio
 				</p>
 			</div>
 
 			<div className="mt-10 sm:mt-16">
 				<h3
-					className="font-general-regular 
+					className="font-general-regular
                         text-center text-secondary-dark
                         dark:text-ternary-light
                         text-md
                         sm:text-xl
                         mb-3
-                        "
-				>
-					Search projects by title or filter by category
+                        ">
+					Search projects by title
 				</h3>
 				<div
 					className="
@@ -43,8 +42,7 @@ const ProjectsGrid = () => {
                         dark:border-secondary-dark
                         pb-3
                         gap-3
-                        "
-				>
+                        ">
 					<div className="flex justify-between gap-2">
 						<span
 							className="
@@ -56,20 +54,19 @@ const ProjectsGrid = () => {
                                 shadow-sm
                                 rounded-xl
                                 cursor-pointer
-                                "
-						>
+                                ">
 							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
 						</span>
 						<input
 							onChange={(e) => {
 								setSearchProject(e.target.value);
 							}}
-							className="font-general-medium 
+							className="font-general-medium
                                 pl-3
                                 pr-1
                                 sm:px-4
                                 py-2
-                                border 
+                                border
                             border-gray-200
                                 dark:border-secondary-dark
                                 rounded-lg
@@ -89,7 +86,8 @@ const ProjectsGrid = () => {
 						/>
 					</div>
 
-					<ProjectsFilter setSelectProject={setSelectProject} />
+					{/* Uncomment below to add filtering by categories */}
+					{/* <ProjectsFilter setSelectProject={setSelectProject} /> */}
 				</div>
 			</div>
 
@@ -116,6 +114,7 @@ const ProjectsGrid = () => {
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
+								description={project.description}
 								image={project.img}
 								key={project.id}
 							/>

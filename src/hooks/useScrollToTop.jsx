@@ -3,12 +3,9 @@
 
 import { useState, useEffect } from "react";
 import { FiChevronUp } from "react-icons/fi";
-import useThemeSwitcher from "./useThemeSwitcher";
 
 const useScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
-
-	const [activeTheme] = useThemeSwitcher();
 
 	useEffect(() => {
 		window.addEventListener("scroll", scrollToTop);
@@ -44,8 +41,8 @@ const useScrollToTop = () => {
 					width: 45,
 					borderRadius: 50,
 					border: "1px solid #1976D2",
-					right: 50,
-					bottom: 50,
+					right: 40,
+					bottom: 45,
 					display: showScroll ? "flex" : "none",
 					padding: 5,
 					color: "#1976D2",

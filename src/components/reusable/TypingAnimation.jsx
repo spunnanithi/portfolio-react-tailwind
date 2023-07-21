@@ -7,16 +7,18 @@ export const TypeAnimator = () => {
 			preRenderFirstString={true}
 			sequence={[
 				"Full-stack Software Engineer",
-				2000,
+				1500,
 				"Front-end Software Engineer",
-				2000,
+				1500,
 				"Back-end Software Engineer",
-				2000,
+				1500,
 				"Life-long Learner",
-				2000,
+				1500,
+				"Teamplayer",
+				1500,
 			]}
-			speed={50}
-			style={{ color: "#1976D2" }}
+			speed={60}
+			style={{ color: "#1976D2", fontWeight: "bold" }}
 			repeat={Infinity}
 		/>
 	);

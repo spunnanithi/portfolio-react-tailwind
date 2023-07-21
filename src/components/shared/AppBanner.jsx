@@ -38,6 +38,18 @@ const AppBanner = () => {
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200">
 					I am a <TypeAnimator />
 				</motion.p>
+				<motion.p
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						ease: "easeInOut",
+						duration: 0.9,
+						delay: 0.25,
+					}}
+					className="font-general-medium mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200">
+					I'm passionate about developing feature-rich and intuitive software
+					solutions.
+				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -50,7 +62,7 @@ const AppBanner = () => {
 					<a
 						download="SirasitPunnanithi.pdf"
 						href="/files/SirasitPunnanithi.pdf"
-						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-secondary-blue hover:bg-primary-blue text-gray-500 hover:text-white duration-500"
 						aria-label="Download Resume">
 						<FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
 						<span className="text-sm sm:text-lg font-general-medium duration-100">
