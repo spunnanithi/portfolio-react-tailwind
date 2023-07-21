@@ -3,6 +3,7 @@ import { FiArrowDownCircle } from "react-icons/fi";
 import developerLight from "../../images/developer.svg";
 import developerDark from "../../images/developer-dark.svg";
 import { motion } from "framer-motion";
+import { TypeAnimator } from "../reusable/TypingAnimation";
 
 const AppBanner = () => {
 	const [activeTheme] = useThemeSwitcher();
@@ -34,8 +35,8 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200">
-					A Full-Stack Developer
+					className="font-general-medium mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200">
+					I am a <TypeAnimator />
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}

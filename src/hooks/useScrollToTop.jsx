@@ -1,16 +1,19 @@
 // NOTE: This scroll to top is the actual working scroll to to when user clicks on the circle arrow that appears when use scrolls down.
 // The other `ScrollToTop` component in components folder is for the default react scroll to top behavior on route visit.
 
-import { useState, useEffect } from 'react';
-import { FiChevronUp } from 'react-icons/fi';
+import { useState, useEffect } from "react";
+import { FiChevronUp } from "react-icons/fi";
+import useThemeSwitcher from "./useThemeSwitcher";
 
 const useScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
 
+	const [activeTheme] = useThemeSwitcher();
+
 	useEffect(() => {
-		window.addEventListener('scroll', scrollToTop);
+		window.addEventListener("scroll", scrollToTop);
 		return function cleanup() {
-			window.removeEventListener('scroll', scrollToTop);
+			window.removeEventListener("scroll", scrollToTop);
 		};
 	});
 
@@ -25,11 +28,11 @@ const useScrollToTop = () => {
 	const backToTop = () => {
 		window.scrollTo({
 			top: 0,
-			behavior: 'smooth',
+			behavior: "smooth",
 		});
 	};
 
-	window.addEventListener('scroll', scrollToTop);
+	window.addEventListener("scroll", scrollToTop);
 
 	return (
 		<>
@@ -40,10 +43,12 @@ const useScrollToTop = () => {
 					height: 45,
 					width: 45,
 					borderRadius: 50,
+					border: "1px solid #1976D2",
 					right: 50,
 					bottom: 50,
-					display: showScroll ? 'flex' : 'none',
+					display: showScroll ? "flex" : "none",
 					padding: 5,
+					color: "#1976D2",
 				}}
 			/>
 		</>
