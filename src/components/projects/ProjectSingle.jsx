@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const ProjectSingle = ({ title, category, image, description }) => {
+const ProjectSingle = ({ id, title, category, image, description }) => {
+	let lowercaseTitle = title.split(" ").join("").toLowerCase();
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -11,12 +13,12 @@ const ProjectSingle = ({ title, category, image, description }) => {
 				duration: 0.7,
 				delay: 0.15,
 			}}>
-			<Link to="/projects/single-project" aria-label="Single Project">
+			<Link to={`/projects/${lowercaseTitle}`} aria-label="Single Project">
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer hover:scale-110 mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
 						<img
 							src={image}
-							style={{ height: "17em", width: "30em" }}
+							style={{ height: "15em", width: "30em" }}
 							className="rounded-t-xl border-b-2"
 							alt="Single Project"
 						/>
