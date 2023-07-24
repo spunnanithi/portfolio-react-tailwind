@@ -1303,8 +1303,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 		height: 1.5rem;
 	}
 
+	.sm\:w-2\/5 {
+		width: 40%;
+	}
 	.sm\:w-1\/4 {
 		width: 25%;
+	}
+	.sm\:w-2\/4 {
+		width: 50%;
 	}
 
 	.sm\:w-3\/4 {

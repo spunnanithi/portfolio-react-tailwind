@@ -1,10 +1,18 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+		bio: "I am a dedicated and detail-oriented full-stack software engineer with expertise in developing user-friendly applications using a wide range of technologies, including JavaScript, Python, and React. I have successfully delivered various full-stack projects that solved real-world problems and positively impacted users. My passion for technology drives me to stay updated with the latest industry trends, ensuring I continuously enhance my skills and deliver innovative solutions.",
 	},
 	{
 		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: "As a former medical assistant with a Bachelor of Science in Kinesiology, I honed my problem-solving techniques, critical-thinking skills, and ability to thrive under pressure, which I now apply daily as a software engineer. While my time in the healthcare profession was fulfilling, I have come to realize that my true passion lies in the ever-expanding world of technology, where I believe I can make an even greater impact.",
+	},
+	{
+		id: 3,
+		bio: "Through diverse project experiences, both in collaborative group settings and individual endeavors, I have showcased my ability to excel at various roles, from effective team leadership to being a valuable and supportive team member. With my growth mindset and life-long learning approach, I ensure I am constantly evolving and bettering my knowledge and refining my skill set.",
+	},
+	{
+		id: 4,
+		bio: "Thank you for touring my portfolio, I hope to connect with you soon and discuss potential opportunities!",
 	},
 ];
