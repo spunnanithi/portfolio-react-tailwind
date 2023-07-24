@@ -759,6 +759,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 	--tw-bg-opacity: 1;
 	background-color: rgb(13 71 161 / var(--tw-bg-opacity));
 }
+.bg-gray-400 {
+	--tw-bg-opacity: 1;
+	background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+.bg-gray-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
 .bg-gray-600 {
 	--tw-bg-opacity: 1;
 	background-color: rgb(75 85 99 / var(--tw-bg-opacity));
@@ -1022,6 +1030,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .duration-100 {
 	transition-duration: 100ms;
 }
+
 .hover\:bg-indigo-600:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgb(79 70 229 / var(--tw-bg-opacity));

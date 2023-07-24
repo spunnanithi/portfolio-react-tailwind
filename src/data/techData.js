@@ -14,9 +14,9 @@ import git from "../images/tech-tools/git.svg";
 import html5 from "../images/tech-tools/html5.svg";
 import css from "../images/tech-tools/css.svg";
 
-export const clientsHeading = "Techologies & Tools";
+export const techHeading = "Techologies & Tools";
 
-export const clientsData = [
+export const techData = [
 	{
 		id: 1,
 		title: "Python",
@@ -29,7 +29,7 @@ export const clientsData = [
 	},
 	{
 		id: 3,
-		title: "JavaScript",
+		title: "TypeScript",
 		img: typescript,
 	},
 	{
@@ -39,12 +39,12 @@ export const clientsData = [
 	},
 	{
 		id: 9,
-		title: "PUMA",
+		title: "HTML5",
 		img: html5,
 	},
 	{
 		id: 14,
-		title: "PUMA",
+		title: "CSS3",
 		img: css,
 	},
 	{
@@ -59,32 +59,32 @@ export const clientsData = [
 	},
 	{
 		id: 7,
-		title: "SAMSUNG",
+		title: "Bootstrap",
 		img: bootstrap,
 	},
 	{
 		id: 8,
-		title: "CANON",
+		title: "TailwindCSS",
 		img: tailwind,
 	},
 	{
 		id: 10,
-		title: "PUMA",
+		title: "PostgreSQL",
 		img: postgresql,
 	},
 	{
 		id: 11,
-		title: "PUMA",
+		title: "MongoDB",
 		img: mongodb,
 	},
 	{
 		id: 12,
-		title: "PUMA",
+		title: "Docker",
 		img: docker,
 	},
 	{
 		id: 13,
-		title: "PUMA",
+		title: "Git",
 		img: git,
 	},
 ];
