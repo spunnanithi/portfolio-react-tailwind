@@ -1,11 +1,4 @@
-import {
-	FiGithub,
-	FiTwitter,
-	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
-	FiGitlab,
-} from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiGlobe, FiGitlab } from "react-icons/fi";
 import AppFooterCopyright from "./AppFooterCopyright";
 
 const socialLinks = [
