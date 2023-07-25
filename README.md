@@ -6,7 +6,7 @@ My personal portfolio built with React and Tailwind CSS.
 
 ## Demo URL
 
-[https://react-tailwindcss-portfolio.netlify.app](https://react-tailwindcss-portfolio.netlify.app)
+[https://punnanithi-portfolio.vercel.app/](https://punnanithi-portfolio.vercel.app/)
 
 ## Features
 
