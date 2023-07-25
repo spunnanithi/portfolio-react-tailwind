@@ -39,7 +39,7 @@ const ProjectSingle = ({ id, title, category, image, description }) => {
 						<p
 							href="#"
 							className="mt-5 font-medium text-primary-blue hover:text-secondary-blue dark:text-primary-blue">
-							Click on the card for more information!
+							Click for more information!
 						</p>
 					</div>
 				</div>
