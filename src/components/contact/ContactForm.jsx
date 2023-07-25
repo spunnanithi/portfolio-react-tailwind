@@ -1,16 +1,37 @@
-import Button from '../reusable/Button';
-import FormInput from '../reusable/FormInput';
+import Button from "../reusable/Button";
+import FormInput from "../reusable/FormInput";
+import emailjs from "emailjs-com";
+import React, { useRef } from "react";
 
 const ContactForm = () => {
+	const form = useRef();
+
+	const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+	const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+	const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+	const handleSubmitEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+
+		form.current.reset();
+	};
+
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
 				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-					}}
-					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
-				>
+					onSubmit={handleSubmitEmail}
+					ref={form}
+					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left">
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
@@ -45,8 +66,7 @@ const ContactForm = () => {
 					<div className="mt-6">
 						<label
 							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							htmlFor="message"
-						>
+							htmlFor="message">
 							Message
 						</label>
 						<textarea
@@ -55,11 +75,10 @@ const ContactForm = () => {
 							name="message"
 							cols="14"
 							rows="6"
-							aria-label="Message"
-						></textarea>
+							aria-label="Message"></textarea>
 					</div>
 
-					<div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
+					<div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-primary-blue hover:bg-secondary-blue focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
 						<Button
 							title="Send Message"
 							type="submit"
