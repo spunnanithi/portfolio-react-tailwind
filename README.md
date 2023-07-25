@@ -1,8 +1,8 @@
-# React & TailwindCSS Portfolio - With Dark Mode
+# React & TailwindCSS Portfolio - With Dark/Light Mode
 
-A simple portfolio starter theme built with React and Tailwind CSS. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
+My personal portfolio built with React and Tailwind CSS.
 
-![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
+![React-TailwindCSS-Portfolio](./src/images/main-dark.png)
 
 ## Demo URL
 
@@ -10,32 +10,32 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 
 ## Features
 
--   [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
--   [Tailwind CSS v3](https://tailwindcss.com)
--   Context API For State Management
--   Custom Hooks
--   Unit Testing
--   Framer Motion transitions & animations
--   Reusable components
--   Dark mode
--   Projects filter by category
--   Projects filter by search
--   Smooth scroll
--   Counter
--   Dynamic forms
--   Back to top button
--   Download file button
--   Simple and responsive design
-
-### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
+- [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
+- [Tailwind CSS v3](https://tailwindcss.com)
+- [EmailJS](https://www.emailjs.com)
+- Context API For State Management
+- Custom Hooks
+- Unit Testing
+- Framer Motion transitions & animations
+- [React Typing Animation](https://www.npmjs.com/package/react-type-animation)
+- Reusable components
+- Dark/light mode
+<!-- - Projects filter by category -->
+- Projects filter by search
+- Smooth scroll
+<!-- - Counter -->
+- Dynamic forms
+- Back to top button
+- Download file button
+- Simple and responsive design
 
 ## Setup
 
 1. Make sure you have Node JS installed. If you don't have it:
 
--   [Download it from nodejs.org](https://nodejs.org)
--   [Install it using NVM ](https://github.com/nvm-sh/nvm)
--   If you're on Mac, Homebrew is a good option too:
+- [Download it from nodejs.org](https://nodejs.org)
+- [Install it using NVM ](https://github.com/nvm-sh/nvm)
+- If you're on Mac, Homebrew is a good option too:
 
 ```
 brew install node
@@ -44,13 +44,13 @@ brew install node
 2. Clone the repo:
 
 ```
-git clone https://github.com/realstoman/react-tailwindcss-portfolio.git
+git clone https://github.com/spunnanithi/portfolio-react-tailwind.git
 ```
 
 3. Open the project folder:
 
 ```
-cd react-tailwindcss-portfolio
+cd portfolio-react-tailwindcss
 ```
 
 4. Install packages and dependencies:
@@ -59,11 +59,11 @@ cd react-tailwindcss-portfolio
 yarn
 ```
 
-4. NOTE: If you don't have yarn installed, you can install it globally using npm:
-
-```
-npm install --global yarn
-```
+> NOTE: If you don't have yarn installed, you can install it globally using npm:
+>
+> ```
+> npm install --global yarn
+> ```
 
 5. Start a local dev server at `http://localhost:3000`:
 
@@ -71,7 +71,7 @@ npm install --global yarn
 yarn start
 ```
 
-6. ##### Run tests:
+6. Run tests:
 
 ```
 yarn test
@@ -79,13 +79,11 @@ yarn test
 
 ## Notes
 
--   Always run `yarn install` after pulling new changes
--   I'll be constantly updating this repo as I'll be adding more sections to it, so please always check the projects section of this repo to see what tasks are under todo and in progress
--   Coming Soon [I'll be doing a screencast](https://www.youtube.com/realstoman). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
--   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
--   Images from [Unsplash](https://unsplash.com)
--   Feel free to use it as your own portfolio
--   Contributions are welcome
+- Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
+- Images from [Unsplash](https://unsplash.com)
+- SVG images from [SVGRepo](https://www.svgrepo.com/)
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
 
 ### License
+
 [MIT](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/LICENSE)
