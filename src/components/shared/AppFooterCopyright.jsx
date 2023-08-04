@@ -13,8 +13,8 @@ function AppFooterCopyright() {
 				<a
 					href="/"
 					target="__blank"
-					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-primary-blue dark:hover:text-primary-blue ml-1 duration-500">
-					Punnanithi
+					className="text-primary-blue dark:text-primary-blue font-medium uppercase hover:underline hover:text-primary-blue dark:hover:text-primary-blue ml-1 duration-500">
+					Developed by Sirasit Punnanithi
 				</a>
 			</div>
 		</div>

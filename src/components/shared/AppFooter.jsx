@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiGlobe, FiGitlab } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiGlobe } from "react-icons/fi";
 import AppFooterCopyright from "./AppFooterCopyright";
 
 const socialLinks = [
@@ -14,11 +14,6 @@ const socialLinks = [
 	},
 	{
 		id: 3,
-		icon: <FiGitlab />,
-		url: "https://gitlab.com/spunnanithi",
-	},
-	{
-		id: 4,
 		icon: <FiLinkedin />,
 		url: "https://www.linkedin.com/in/sirasit-punnanithi/",
 	},

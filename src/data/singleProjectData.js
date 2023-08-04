@@ -190,7 +190,7 @@ export const singleProjectData = [
 				{
 					id: 3,
 					title: "Website",
-					details: "https://gitlab.com/spunnanithi/cartropolis",
+					details: "https://github.com/spunnanithi/cartropolis",
 				},
 			],
 			ObjectivesHeading: "Description",
@@ -245,8 +245,8 @@ export const singleProjectData = [
 				{
 					id: 2,
 					name: "GitLab",
-					icon: <FiGitlab />,
-					url: "https://gitlab.com/spunnanithi/cartropolis",
+					icon: <FiGithub />,
+					url: "https://github.com/spunnanithi/cartropolis",
 				},
 			],
 		},
