@@ -4,6 +4,10 @@ import ProjectsGrid from "../components/projects/ProjectsGrid";
 import { ProjectsProvider } from "../context/ProjectsContext";
 import Button from "../components/reusable/Button";
 
+// ! Uncomment below if you want to only display three projects on Home page
+// ! Insert component between ProjectsProvider
+// import ProjectsHomeGrid from "../components/projects/ProjectsHomeGrid";
+
 const Home = () => {
 	return (
 		<div className="container mx-auto">
