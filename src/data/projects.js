@@ -2,6 +2,7 @@
 import playboxx from "../images/playboxx-landing.png";
 import cartropolis from "../images/cartropolis-landing.png";
 import conferenceGo from "../images/conference-go-landing.png";
+import calculator from "../images/calculator-empty.png";
 
 export const projectsData = [
 	{
@@ -27,6 +28,14 @@ export const projectsData = [
 		img: conferenceGo,
 		description:
 			"A conference management application developed using Python and Django for building APIs, and JavaScript along with React for consuming those APIs. Employs weather data and location-based pictures from third-party APIs to offer users relevant information about each conference location.",
+	},
+	{
+		id: 4,
+		title: "Calculator App",
+		category: "Web Application",
+		img: calculator,
+		description:
+			"A calculator application developed using JavaScript, Next.js, and TailwindCSS. Perform simple calculations such as addition, subtraction, multiplication, and division.",
 	},
 ];
 

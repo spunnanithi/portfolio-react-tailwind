@@ -36,6 +36,10 @@ function App() {
 								path="projects/conferencego"
 								element={<ProjectSingle id={2} />}
 							/>
+							<Route
+								path="projects/calculatorapp"
+								element={<ProjectSingle id={3} />}
+							/>
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>

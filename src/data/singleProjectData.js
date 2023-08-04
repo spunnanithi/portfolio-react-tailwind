@@ -8,9 +8,11 @@ import cartropolisSales from "../images/cartropolis-sales.png";
 import conferenceGoLanding from "../images/conference-go-landing.png";
 import conferenceGoConferences from "../images/conference-go-conferences.png";
 import conferenceGoForms from "../images/conference-go-form.png";
+import calculatorEmpty from "../images/calculator-empty.png";
+import calculatorNonEmpty from "../images/calculator-nonempty.png";
 
 // Import icons
-import { FiLinkedin, FiGitlab, FiGlobe } from "react-icons/fi";
+import { FiLinkedin, FiGitlab, FiGithub, FiGlobe } from "react-icons/fi";
 
 export const singleProjectData = [
 	// PlayBoxx Data
@@ -373,6 +375,120 @@ export const singleProjectData = [
 					name: "GitLab",
 					icon: <FiGitlab />,
 					url: "https://gitlab.com/spunnanithi/conferencego",
+				},
+			],
+		},
+		// ! Uncomment if you want to add related projects back
+		// RelatedProject: {
+		// 	title: "Related Projects",
+		// 	Projects: [
+		// 		{
+		// 			id: 1,
+		// 			title: "Mobile UI",
+		// 			img: Image4,
+		// 		},
+		// 		{
+		// 			id: 2,
+		// 			title: "Web Application",
+		// 			img: Image5,
+		// 		},
+		// 		{
+		// 			id: 3,
+		// 			title: "UI Design",
+		// 			img: Image6,
+		// 		},
+		// 		{
+		// 			id: 4,
+		// 			title: "Kabul Mobile App UI",
+		// 			img: Image3,
+		// 		},
+		// 	],
+		// },
+	},
+
+	// Calculator App
+	{
+		ProjectHeader: {
+			title: "Calculator App",
+			publishDate: "August 2023",
+			tags: "UI / UX / Frontend",
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: "Calculator app no number on screen",
+				img: calculatorEmpty,
+			},
+			{
+				id: 2,
+				title: "Calculator app number on screen",
+				img: calculatorNonEmpty,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: "About Calculator App",
+			CompanyInfo: [
+				{
+					id: 1,
+					title: "Name",
+					details: "Calculator App",
+				},
+				{
+					id: 2,
+					title: "Tags",
+					details: "UI/UX Design & Frontend Development",
+				},
+				{
+					id: 3,
+					title: "Website",
+					details: "https://github.com/spunnanithi/calculator-app",
+				},
+			],
+			ObjectivesHeading: "Description",
+			ObjectivesDetails:
+				"Calculator app is an application users can use to perform simple math calculations. The Calculator app is built with Next.js for client-side and server-side rendering as well as TailwindCSS for styling. The application features an interactive, minimalistic user interface with fully-functioning number, operation, clear, percentage, sign inverse, and equals buttons.",
+			Technologies: [
+				{
+					title: "Tools & Technologies",
+					techs: [
+						"JavaScript",
+						"Next.js",
+						"React.js",
+						"TailwindCSS",
+						"HTML",
+						"CSS",
+					],
+				},
+			],
+			ProjectDetailsHeading: "Overview",
+			ProjectDetails: [
+				{
+					id: 1,
+					heading:
+						"Perform Addition, Subtraction, Multiplication, and Division",
+					details:
+						"Calculator App allows users to perform simple arithmetic math calcuations. Large numbers are automatically converted and expressed in Scientific Notation.",
+				},
+				{
+					id: 2,
+					heading: "Fully-Functional Buttons",
+					details:
+						"Users can interact with all of the buttons seen on the Calculator. Aside from the arithmetic math calculations, users can clear the screen, convert current number into a percentage, and inverse the current sign of the number.",
+				},
+			],
+			SocialSharingHeading: "Check Out These Links!",
+			SocialSharing: [
+				{
+					id: 1,
+					name: "LinkedIn",
+					icon: <FiLinkedin />,
+					url: "https://www.linkedin.com/in/sirasit-punnanithi/",
+				},
+				{
+					id: 2,
+					name: "Github",
+					icon: <FiGithub />,
+					url: "https://github.com/spunnanithi/calculator-app",
 				},
 			],
 		},
