@@ -1,4 +1,6 @@
 import { FiMapPin, FiMail } from "react-icons/fi";
+import Lottie from "react-lottie";
+import animationData from "../reusable/animation-text-message.json";
 
 const contacts = [
 	{
@@ -14,6 +16,15 @@ const contacts = [
 ];
 
 const ContactDetails = () => {
+	const defaultOptions = {
+		loop: true,
+		autoplay: true,
+		animationData: animationData,
+		setSpeed: 0.3,
+		rendererSettings: {
+			preserveAspectRatio: "xMidYMid slice",
+		},
+	};
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="text-left max-w-xl px-6">
@@ -32,6 +43,9 @@ const ContactDetails = () => {
 						</li>
 					))}
 				</ul>
+				<div className="mt-20">
+					<Lottie options={defaultOptions} width={400} height={400} />
+				</div>
 			</div>
 		</div>
 	);
