@@ -318,7 +318,7 @@ export const singleProjectData = [
 				{
 					id: 3,
 					title: "Website",
-					details: "https://gitlab.com/spunnanithi/conferencego",
+					details: "https://github.com/spunnanithi/ConferenceGO",
 				},
 			],
 			ObjectivesHeading: "Description",
@@ -373,8 +373,8 @@ export const singleProjectData = [
 				{
 					id: 2,
 					name: "GitLab",
-					icon: <FiGitlab />,
-					url: "https://gitlab.com/spunnanithi/conferencego",
+					icon: <FiGithub />,
+					url: "https://github.com/spunnanithi/ConferenceGO",
 				},
 			],
 		},

@@ -20,8 +20,9 @@ const ProjectInfo = ({ id }) => {
 									key={info.id}>
 									<span>{info.title}: </span>
 									<a
-										href="/"
-										key={info.detail}
+										href={info.details}
+										rel="noreferrer"
+										target="_blank"
 										className={
 											info.title === "Website" || info.title === "Phone"
 												? "hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300"
