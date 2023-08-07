@@ -20,7 +20,7 @@ const ContactDetails = () => {
 		loop: true,
 		autoplay: true,
 		animationData: animationData,
-		setSpeed: 0.3,
+		setSpeed: 0.1,
 		rendererSettings: {
 			preserveAspectRatio: "xMidYMid slice",
 		},
