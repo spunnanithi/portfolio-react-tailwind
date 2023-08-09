@@ -7,6 +7,7 @@ import AppHeader from "./components/shared/AppHeader";
 import "./css/App.css";
 import UseScrollToTop from "./hooks/useScrollToTop";
 import Blog from "./pages/Blog";
+import { BlogSinglePage } from "./pages/BlogSinglePage";
 
 const About = lazy(() => import("./pages/AboutMe"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
@@ -44,6 +45,7 @@ function App() {
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 							<Route path="blog" element={<Blog />} />
+							<Route path="blog/1" element={<BlogSinglePage />} />
 						</Routes>
 					</Suspense>
 					<AppFooter />
