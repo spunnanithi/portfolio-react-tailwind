@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export const BlogSinglePage = () => {
 	return (
-		<section className="mx-96 lg:mx-100 py-5 sm:py-10 mt-5 sm:mt-10">
+		<section className="container items-center justify-center mx-auto py-5 sm:py-10 mt-5 sm:mt-10">
 			<div className="text-center">
 				<p className="font-general-medium text-2xl sm:text-4xl text-ternary-dark dark:text-ternary-light">
 					Blog 1 Heading
