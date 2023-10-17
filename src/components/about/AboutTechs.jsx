@@ -11,8 +11,8 @@ const AboutClients = () => {
 				{techsHeading}
 			</p>
 			<div className="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
-				{techsData.map((tech) => (
-					<AboutTechSingle title={tech.title} image={tech.img} key={tech.id} />
+				{techsData.map((tech, id) => (
+					<AboutTechSingle title={tech.title} image={tech.img} key={id} />
 				))}
 			</div>
 		</div>

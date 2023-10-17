@@ -13,77 +13,73 @@ import docker from "../images/tech-tools/docker.svg";
 import git from "../images/tech-tools/git.svg";
 import html5 from "../images/tech-tools/html5.svg";
 import css from "../images/tech-tools/css.svg";
+import nodejs from "../images/tech-tools/nodejs.svg";
+import expressjs from "../images/tech-tools/expressjs.svg";
 
 export const techHeading = "Techologies & Tools";
 
 export const techData = [
 	{
-		id: 1,
 		title: "Python",
 		img: python,
 	},
 	{
-		id: 2,
 		title: "JavaScript",
 		img: javascript,
 	},
 	{
-		id: 3,
 		title: "TypeScript",
 		img: typescript,
 	},
 	{
-		id: 4,
 		title: "React",
 		img: react,
 	},
 	{
-		id: 9,
 		title: "HTML5",
 		img: html5,
 	},
 	{
-		id: 14,
 		title: "CSS3",
 		img: css,
 	},
 	{
-		id: 5,
+		title: "NodeJS",
+		img: nodejs,
+	},
+	{
+		title: "ExpressJS",
+		img: expressjs,
+	},
+	{
 		title: "FastAPI",
 		img: fastapi,
 	},
 	{
-		id: 6,
 		title: "Django",
 		img: django,
 	},
 	{
-		id: 7,
 		title: "Bootstrap",
 		img: bootstrap,
 	},
 	{
-		id: 8,
 		title: "TailwindCSS",
 		img: tailwind,
 	},
 	{
-		id: 10,
 		title: "PostgreSQL",
 		img: postgresql,
 	},
 	{
-		id: 11,
 		title: "MongoDB",
 		img: mongodb,
 	},
 	{
-		id: 12,
 		title: "Docker",
 		img: docker,
 	},
 	{
-		id: 13,
 		title: "Git",
 		img: git,
 	},
