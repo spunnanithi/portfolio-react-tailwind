@@ -42,6 +42,10 @@ function App() {
 								path="projects/calculatorapp"
 								element={<ProjectSingle id={3} />}
 							/>
+							<Route
+								path="projects/headgesports"
+								element={<ProjectSingle id={4} />}
+							/>
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 							<Route path="blog" element={<Blog />} />

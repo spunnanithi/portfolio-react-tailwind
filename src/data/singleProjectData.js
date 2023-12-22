@@ -10,12 +10,15 @@ import conferenceGoConferences from "../images/conference-go-conferences.png";
 import conferenceGoForms from "../images/conference-go-form.png";
 import calculatorEmpty from "../images/calculator-empty.png";
 import calculatorNonEmpty from "../images/calculator-nonempty.png";
+import headgesportsTop from "../images/headgesports-desktop-1.png";
+import headgesportsMiddle from "../images/headgesports-desktop-2.png";
+import headgesportsBottom from "../images/headgesports-desktop-3.png";
 
 // Import icons
 import { FiLinkedin, FiGitlab, FiGithub, FiGlobe } from "react-icons/fi";
 
 export const singleProjectData = [
-	// PlayBoxx Data
+	// * PlayBoxx
 	{
 		ProjectHeader: {
 			title: "PlayBoxx",
@@ -150,7 +153,7 @@ export const singleProjectData = [
 		// },
 	},
 
-	// Cartropolis
+	// * Cartropolis
 	{
 		ProjectHeader: {
 			title: "Cartropolis",
@@ -278,7 +281,7 @@ export const singleProjectData = [
 		// },
 	},
 
-	// Conference GO
+	// * Conference GO
 	{
 		ProjectHeader: {
 			title: "Conference GO",
@@ -406,7 +409,7 @@ export const singleProjectData = [
 		// },
 	},
 
-	// Calculator App
+	// * Calculator App
 	{
 		ProjectHeader: {
 			title: "Calculator App",
@@ -489,6 +492,123 @@ export const singleProjectData = [
 					name: "Github",
 					icon: <FiGithub />,
 					url: "https://github.com/spunnanithi/calculator-app",
+				},
+			],
+		},
+		// ! Uncomment if you want to add related projects back
+		// RelatedProject: {
+		// 	title: "Related Projects",
+		// 	Projects: [
+		// 		{
+		// 			id: 1,
+		// 			title: "Mobile UI",
+		// 			img: Image4,
+		// 		},
+		// 		{
+		// 			id: 2,
+		// 			title: "Web Application",
+		// 			img: Image5,
+		// 		},
+		// 		{
+		// 			id: 3,
+		// 			title: "UI Design",
+		// 			img: Image6,
+		// 		},
+		// 		{
+		// 			id: 4,
+		// 			title: "Kabul Mobile App UI",
+		// 			img: Image3,
+		// 		},
+		// 	],
+		// },
+	},
+	// * HeadgeSports
+	{
+		ProjectHeader: {
+			title: "HeadgeSports",
+			publishDate: "October 2023",
+			tags: "UI / UX / Frontend / Mobile / Desktop",
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: "Desktop view of HeadgeSports",
+				img: headgesportsTop,
+			},
+			{
+				id: 2,
+				title: "Desktop view of HeadgeSports",
+				img: headgesportsMiddle,
+			},
+			{
+				id: 3,
+				title: "Desktop view of HeadgeSports",
+				img: headgesportsBottom,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: "About HeadgeSports",
+			CompanyInfo: [
+				{
+					id: 1,
+					title: "Name",
+					details: "HeadgeSports",
+				},
+				{
+					id: 2,
+					title: "Tags",
+					details: "UI/UX Design & Frontend Development & Mobile Development",
+				},
+				{
+					id: 3,
+					title: "Website",
+					details: "https://headgemedia.com/",
+				},
+			],
+			ObjectivesHeading: "Description",
+			ObjectivesDetails:
+				"HeadgeSports is a user-friendly mobile web application designed for both novice and seasoned sports enthusiasts. Users can engage in testing their football and sports-betting intuition through an interactive interface featuring sliders linked to specific sports statistics. The application uses exclusive straightforward regression algorithms, delivering users instant updates on odds fluctuations. It presents an enjoyable and cost-free platform for individuals of all expertise levels to observe the potential shifts in point spreads, catering to both new and experienced sports bettors.",
+			Technologies: [
+				{
+					title: "Tools & Technologies",
+					techs: ["JavaScript", "React.js", "HTML", "CSS", "Microsoft Azure"],
+				},
+			],
+			ProjectDetailsHeading: "Overview",
+			ProjectDetails: [
+				{
+					id: 1,
+					heading: "DISCLAIMER:",
+					details:
+						"This is a fun, free-to-use application for users to test their football intuition. PLEASE NOTE THAT THIS COMPANY IS NOT RESPONSBILE FOR ANY LOSSES INCURRED IN RELATION TO BETTING ACTIVITIES.",
+				},
+				{
+					id: 2,
+					heading:
+						"Dynamic Football Point Spread: Real-Time Adjustments with User-Friendly Input Sliders",
+					details:
+						"HedgeSports harnesses the power of interactive features through three sliders, allowing users to dynamically adjust key statistics and witness real-time updates to the theoretical point spread. Using distinctive and tailored simple regression algorithms for each game, the platform calculates precise theoretical odds, enhancing the accuracy and responsiveness of the overall sport-betting experience.",
+				},
+				{
+					id: 3,
+					heading: "Share on Social Media",
+					details:
+						"Users have the ability to seamlessly share this application on social media platforms such as X (formerly known as 'Twitter') or Facebook, fostering organic growth through word-of-mouth referrals. This feature encourages an expanded user base and facilitates the spread of the application across various networks.",
+				},
+			],
+			SocialSharingHeading: "Check Out These Links!",
+			SocialSharing: [
+				{
+					id: 1,
+					name: "LinkedIn",
+					icon: <FiLinkedin />,
+					url: "https://www.linkedin.com/in/sirasit-punnanithi/",
+				},
+				{
+					id: 2,
+					name: "Webiste Demo Link",
+					icon: <FiGlobe />,
+					url: "https://headgemedia.com/",
 				},
 			],
 		},
