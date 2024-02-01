@@ -6,8 +6,7 @@ import AppFooter from "./components/shared/AppFooter";
 import AppHeader from "./components/shared/AppHeader";
 import "./css/App.css";
 import UseScrollToTop from "./hooks/useScrollToTop";
-import Blog from "./pages/Blog";
-import { BlogSinglePage } from "./pages/BlogSinglePage";
+import Loading from "./components/reusable/Loading.jsx";
 
 const About = lazy(() => import("./pages/AboutMe"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
@@ -18,11 +17,11 @@ const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
 function App() {
 	return (
 		<AnimatePresence>
-			<div className=" bg-ternary-light-light dark:bg-primary-dark transition duration-300">
+			<div className="bg-ternary-light-light dark:bg-primary-dark transition duration-300">
 				<Router>
 					<ScrollToTop />
 					<AppHeader />
-					<Suspense fallback={""}>
+					<Suspense fallback={<Loading />}>
 						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route path="projects" element={<Projects />} />
@@ -48,8 +47,6 @@ function App() {
 							/>
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
-							<Route path="blog" element={<Blog />} />
-							<Route path="blog/1" element={<BlogSinglePage />} />
 						</Routes>
 					</Suspense>
 					<AppFooter />
