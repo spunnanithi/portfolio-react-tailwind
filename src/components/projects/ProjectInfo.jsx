@@ -16,9 +16,9 @@ const ProjectInfo = ({ id }) => {
 						{data[id].ProjectInfo.CompanyInfo.map((info) => {
 							return (
 								<li
-									className="font-general-regular font-semibold text-ternary-dark dark:text-ternary-light"
-									key={info.id}>
-									<span>{info.title}: </span>
+									className="font-general-regular text-ternary-dark dark:text-ternary-light"
+									key={info.title}>
+									<span className="font-semibold">{info.title}: </span>
 									<a
 										href={info.details}
 										rel="noreferrer"
@@ -52,9 +52,17 @@ const ProjectInfo = ({ id }) => {
 					<p className="font-general-regular text-2xl font-semibold text-primary-blue dark:text-primary-blue mb-2">
 						{data[id].ProjectInfo.Technologies[0].title}
 					</p>
-					<p className="font-general-regular text-primary-dark dark:text-ternary-light">
-						{data[id].ProjectInfo.Technologies[0].techs.join(", ")}
-					</p>
+					<ul>
+						{data[id].ProjectInfo.Technologies[0].techs.map((tech, index) => {
+							return (
+								<li
+									key={index}
+									className="text-primary-dark dark:text-ternary-light">
+									{tech}
+								</li>
+							);
+						})}
+					</ul>
 				</div>
 
 				{/* Single project social sharing */}
@@ -68,7 +76,7 @@ const ProjectInfo = ({ id }) => {
 								<a
 									data-tooltip-target="tooltip-bottom"
 									data-tooltip-placement="bottom"
-									key={social.id}
+									key={social.name}
 									href={social.url}
 									target="__blank"
 									aria-label="Share Project"
@@ -88,18 +96,14 @@ const ProjectInfo = ({ id }) => {
 				</p>
 				{data[id].ProjectInfo.ProjectDetails.map((details) => {
 					return (
-						<>
-							<p
-								key={details.id}
-								className="font-general-regular mb-5 text-xl text-ternary-dark dark:text-ternary-light">
+						<div key={details.heading}>
+							<p className="font-semibold mb-5 text-xl text-ternary-dark dark:text-ternary-light">
 								{details?.heading}
 							</p>
-							<p
-								key={details.id}
-								className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">
+							<p className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">
 								{details.details}
 							</p>
-						</>
+						</div>
 					);
 				})}
 			</div>

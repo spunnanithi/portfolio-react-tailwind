@@ -13,12 +13,15 @@ import calculatorNonEmpty from "../images/calculator-nonempty.png";
 import headgesportsTop from "../images/headgesports-desktop-1.png";
 import headgesportsMiddle from "../images/headgesports-desktop-2.png";
 import headgesportsBottom from "../images/headgesports-desktop-3.png";
+import blogMainLight from "../images/blog-main-light.png";
+import blogMainDark from "../images/blog-main-dark.png";
+import blogPostDark from "../images/blog-post-dark.png";
 
 // Import icons
 import { FiLinkedin, FiGitlab, FiGithub, FiGlobe } from "react-icons/fi";
 
 export const singleProjectData = [
-	// * PlayBoxx
+	// TODO: PlayBoxx
 	{
 		ProjectHeader: {
 			title: "PlayBoxx",
@@ -153,7 +156,7 @@ export const singleProjectData = [
 		// },
 	},
 
-	// * Cartropolis
+	// TODO: Cartropolis
 	{
 		ProjectHeader: {
 			title: "Cartropolis",
@@ -281,7 +284,7 @@ export const singleProjectData = [
 		// },
 	},
 
-	// * Conference GO
+	// TODO: Conference GO
 	{
 		ProjectHeader: {
 			title: "Conference GO",
@@ -409,7 +412,7 @@ export const singleProjectData = [
 		// },
 	},
 
-	// * Calculator App
+	// TODO: Calculator App
 	{
 		ProjectHeader: {
 			title: "Calculator App",
@@ -522,7 +525,8 @@ export const singleProjectData = [
 		// 	],
 		// },
 	},
-	// * HeadgeSports
+
+	// TODO: HeadgeSports
 	{
 		ProjectHeader: {
 			title: "HeadgeSports",
@@ -609,6 +613,131 @@ export const singleProjectData = [
 					name: "Webiste Demo Link",
 					icon: <FiGlobe />,
 					url: "https://headgemedia.com/",
+				},
+			],
+		},
+		// ! Uncomment if you want to add related projects back
+		// RelatedProject: {
+		// 	title: "Related Projects",
+		// 	Projects: [
+		// 		{
+		// 			id: 1,
+		// 			title: "Mobile UI",
+		// 			img: Image4,
+		// 		},
+		// 		{
+		// 			id: 2,
+		// 			title: "Web Application",
+		// 			img: Image5,
+		// 		},
+		// 		{
+		// 			id: 3,
+		// 			title: "UI Design",
+		// 			img: Image6,
+		// 		},
+		// 		{
+		// 			id: 4,
+		// 			title: "Kabul Mobile App UI",
+		// 			img: Image3,
+		// 		},
+		// 	],
+		// },
+	},
+
+	// TODO: MyDevJourney
+	{
+		ProjectHeader: {
+			title: "MyDevJourney",
+			publishDate: "January 2024",
+			tags: "UI / UX / Frontend / Desktop / Mobile",
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: "Main blog page in light mode",
+				img: blogMainLight,
+			},
+			{
+				id: 2,
+				title: "Main blog page in dark mode",
+				img: blogMainDark,
+			},
+			{
+				id: 3,
+				title: "Single blog page in dark mode",
+				img: blogPostDark,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: "About MyDevJourney",
+			CompanyInfo: [
+				{
+					id: 1,
+					title: "Name",
+					details: "MyDevJourney",
+				},
+				{
+					id: 2,
+					title: "Tags",
+					details:
+						"UI/UX Design & Frontend Development & Full-stack Development",
+				},
+				{
+					id: 3,
+					title: "Website",
+					details: "https://mydevjourney.vercel.app/",
+				},
+			],
+			ObjectivesHeading: "Description",
+			ObjectivesDetails:
+				"MyDevJourney is a user-friendly web application catering to coding enthusiasts at all skill levels. MyDevJourney aims to share my learning journey within the tech field with like-minded readers. With an elegant and simple design, MyDevJourney ensures an enjoyable and cost-free platform for individuals passionate about development. Whether you're a coding novice or a seasoned pro, embark on your coding adventure with me on MyDevJourney, where every line of code tells a story, and every coder finds a supportive community.",
+			Technologies: [
+				{
+					title: "Tools & Technologies",
+					techs: [
+						"JavaScript",
+						"Next.js",
+						"TailwindCSS",
+						"shadcn/ui",
+						"Sanity.io",
+						"Vercel",
+					],
+				},
+			],
+			ProjectDetailsHeading: "Overview",
+			ProjectDetails: [
+				{
+					id: 1,
+					heading: "Sanity.io CMS Integration",
+					details:
+						"Integrating Sanity.io content management system (CMS) into a Next.js blog web application offers a seamless and efficient content management solution. Sanity.io, a headless CMS, enables developers to structure content using a flexible and customizable schema, providing a user-friendly interface for content creators. The integration with Next.js, a React-based framework, ensures a fast and dynamic front-end experience. Developers can easily fetch and display content from Sanity.io, utilizing its powerful API, while maintaining a smooth editing workflow for content creators. This combination empowers teams to build and maintain a scalable blog application with ease, enjoying the benefits of a structured CMS and the performance advantages of Next.js.",
+				},
+				{
+					id: 2,
+					heading: "Embedded Sanity Studio",
+					details:
+						"Sanity.io CMS Studio seamlessly integrates with Next.js in a blog web application, offering content creators a user-friendly and efficient method to create and manage content. The combination of Sanity.io's powerful CMS capabilities and Next.js's high-performance framework ensures a smooth workflow for managing and updating content. With Sanity Studio, content creators can easily organize, edit, and publish their blog posts with a visually intuitive interface, streamlining the content creation process. The integration enables real-time collaboration, version control, and flexible customization, empowering users to maintain an engaging and dynamic blog while enjoying the benefits of a headless CMS.",
+				},
+				{
+					id: 3,
+					heading: "Dark/Light Mode",
+					details:
+						"Incorporating dark and light mode functionality into a Next.js blog web application enhances user experience by providing a customizable visual interface. This feature allows users to toggle between light and dark themes based on their preferences, reducing eye strain and improving readability in varying lighting conditions. With Next.js, implementing this feature is streamlined through its component-based architecture and support for dynamic data rendering. Leveraging Tailwind theme providers, developers can easily switch between color schemes, ensuring a seamless and visually pleasing experience for blog readers. Additionally, this customization aligns with modern design trends and caters to diverse user preferences, contributing to a more inclusive and user-friendly web application.",
+				},
+			],
+			SocialSharingHeading: "Check Out These Links!",
+			SocialSharing: [
+				{
+					id: 1,
+					name: "LinkedIn",
+					icon: <FiLinkedin />,
+					url: "https://www.linkedin.com/in/sirasit-punnanithi/",
+				},
+				{
+					id: 2,
+					name: "Webiste Demo Link",
+					icon: <FiGlobe />,
+					url: "https://mydevjourney.vercel.app/",
 				},
 			],
 		},

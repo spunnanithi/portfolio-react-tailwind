@@ -93,32 +93,32 @@ const ProjectsGrid = () => {
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
 				{selectProject
-					? selectProjectsByCategory.map((project) => (
+					? selectProjectsByCategory.map((project, index) => (
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
 								image={project.img}
-								key={project.id}
+								key={index}
 							/>
 					  ))
 					: searchProject
-					? searchProjectsByTitle.map((project) => (
+					? searchProjectsByTitle.map((project, index) => (
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
 								image={project.img}
-								key={project.id}
+								key={index}
 							/>
 					  ))
 					: projects
 							.slice(0, 3)
-							.map((project) => (
+							.map((project, index) => (
 								<ProjectSingle
 									title={project.title}
 									category={project.category}
 									description={project.description}
 									image={project.img}
-									key={project.id}
+									key={index}
 								/>
 							))}
 			</div>
