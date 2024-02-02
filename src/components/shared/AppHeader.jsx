@@ -64,7 +64,7 @@ const AppHeader = () => {
 										className="w-36"
 										alt="Light Logo"
 									/>
-									<span className="self-center text-xl font-semibold whitespace-nowrap text-ternary-dark">
+									<span className="self-center text-lg md:text-xl font-semibold whitespace-nowrap text-ternary-dark">
 										Sirasit Punnanithi
 									</span>
 								</>
@@ -80,7 +80,7 @@ const AppHeader = () => {
 										className="w-36"
 										alt="Dark Logo"
 									/>
-									<span className="self-center text-xl font-semibold whitespace-nowrap text-primary-light">
+									<span className="self-center text-lg md:text-xl font-semibold whitespace-nowrap text-primary-light">
 										Sirasit Punnanithi
 									</span>
 								</>
