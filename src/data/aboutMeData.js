@@ -9,10 +9,6 @@ export const aboutMeData = [
 	},
 	{
 		id: 3,
-		bio: "Through diverse project experiences, both in collaborative group settings and individual endeavors, I have showcased my ability to excel at various roles, from effective team leadership to being a valuable and supportive team member. With my growth mindset and life-long learning approach, I ensure I am constantly evolving and bettering my knowledge and refining my skill set.",
-	},
-	{
-		id: 4,
 		bio: "Thank you for touring my portfolio, I hope to connect with you soon and discuss potential opportunities!",
 	},
 ];

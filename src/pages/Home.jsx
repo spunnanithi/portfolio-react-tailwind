@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import AppBanner from "../components/shared/AppBanner";
-import ProjectsGrid from "../components/projects/ProjectsGrid";
+import ProjectsHomeGrid from "../components/projects/ProjectsHomeGrid";
 import { ProjectsProvider } from "../context/ProjectsContext";
 import Button from "../components/reusable/Button";
 
-// ! Uncomment below if you want to only display three projects on Home page
+// ! Uncomment below if you want to display MORE THAN three projects on Home page
 // ! Insert component between ProjectsProvider
-// import ProjectsHomeGrid from "../components/projects/ProjectsHomeGrid";
+// import ProjectsGrid from "../components/projects/ProjectsGrid";
 
 const Home = () => {
 	return (
@@ -14,7 +14,7 @@ const Home = () => {
 			<AppBanner></AppBanner>
 
 			<ProjectsProvider>
-				<ProjectsGrid></ProjectsGrid>
+				<ProjectsHomeGrid />
 			</ProjectsProvider>
 
 			<div className="mt-8 sm:mt-10 flex justify-center">

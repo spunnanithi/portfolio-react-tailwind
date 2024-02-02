@@ -38,7 +38,7 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-xl md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200">
+					className="font-general-medium mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200">
 					I am a <TypeAnimator />
 				</motion.p>
 				<motion.p
