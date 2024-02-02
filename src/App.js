@@ -15,6 +15,19 @@ const Projects = lazy(() => import("./pages/Projects"));
 const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
 
 function App() {
+	const routes = [
+		{ path: "/", component: <Home /> },
+		{ path: "/about", component: <About /> },
+		{ path: "/contact", component: <Contact /> },
+		{ path: "/projects", component: <Projects /> },
+		{ path: "projects/playboxx", component: <ProjectSingle id={0} /> },
+		{ path: "projects/cartropolis", component: <ProjectSingle id={1} /> },
+		{ path: "projects/conferencego", component: <ProjectSingle id={2} /> },
+		{ path: "projects/calculatorapp", component: <ProjectSingle id={3} /> },
+		{ path: "projects/headgesports", component: <ProjectSingle id={4} /> },
+		{ path: "projects/mydevjourney", component: <ProjectSingle id={5} /> },
+	];
+
 	return (
 		<AnimatePresence>
 			<div className="bg-ternary-light-light dark:bg-primary-dark transition duration-300">
@@ -23,13 +36,22 @@ function App() {
 					<AppHeader />
 					<Suspense fallback={<Loading />}>
 						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="projects" element={<Projects />} />
-							<Route
+							{routes.map((route) => {
+								return (
+									<Route
+										key={route.path}
+										path={route.path}
+										element={route.component}
+									/>
+								);
+							})}
+							{/* <Route path="/" element={<Home />} /> */}
+							{/* <Route path="projects" element={<Projects />} /> */}
+							{/* <Route
 								path="projects/playboxx"
 								element={<ProjectSingle id={0} />}
-							/>
-							<Route
+							/> */}
+							{/* <Route
 								path="projects/cartropolis"
 								element={<ProjectSingle id={1} />}
 							/>
@@ -44,9 +66,9 @@ function App() {
 							<Route
 								path="projects/headgesports"
 								element={<ProjectSingle id={4} />}
-							/>
-							<Route path="about" element={<About />} />
-							<Route path="contact" element={<Contact />} />
+							/> */}
+							{/* <Route path="about" element={<About />} />
+							<Route path="contact" element={<Contact />} /> */}
 						</Routes>
 					</Suspense>
 					<AppFooter />
