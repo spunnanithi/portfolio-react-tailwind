@@ -16,6 +16,9 @@ import headgesportsBottom from "../images/headgesports-desktop-3.png";
 import blogMainLight from "../images/blog-main-light.png";
 import blogMainDark from "../images/blog-main-dark.png";
 import blogPostDark from "../images/blog-post-dark.png";
+import flixqueueMain from "../images/flixqueue-main.png";
+import flixqueueSearch from "../images/flixqueue-search.png";
+import flixqueueWatchlist from "../images/flixqueue-watchlist.png";
 
 // Import icons
 import { FiLinkedin, FiGitlab, FiGithub, FiGlobe } from "react-icons/fi";
@@ -738,6 +741,130 @@ export const singleProjectData = [
 					name: "Webiste Demo Link",
 					icon: <FiGlobe />,
 					url: "https://mydevjourney.vercel.app/",
+				},
+			],
+		},
+		// ! Uncomment if you want to add related projects back
+		// RelatedProject: {
+		// 	title: "Related Projects",
+		// 	Projects: [
+		// 		{
+		// 			id: 1,
+		// 			title: "Mobile UI",
+		// 			img: Image4,
+		// 		},
+		// 		{
+		// 			id: 2,
+		// 			title: "Web Application",
+		// 			img: Image5,
+		// 		},
+		// 		{
+		// 			id: 3,
+		// 			title: "UI Design",
+		// 			img: Image6,
+		// 		},
+		// 		{
+		// 			id: 4,
+		// 			title: "Kabul Mobile App UI",
+		// 			img: Image3,
+		// 		},
+		// 	],
+		// },
+	},
+
+	// TODO: FlixQueue
+	{
+		ProjectHeader: {
+			title: "FlixQueue",
+			publishDate: "March 2024",
+			tags: "UI / UX / Frontend / Desktop / Mobile",
+		},
+		ProjectImages: [
+			{
+				id: 1,
+				title: "FlixQueue - Main Page",
+				img: flixqueueMain,
+			},
+			{
+				id: 2,
+				title: "FlixQueue - Search Page",
+				img: flixqueueSearch,
+			},
+			{
+				id: 3,
+				title: "FlixQueue - Watchlist Page",
+				img: flixqueueWatchlist,
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: "About FlixQueue",
+			CompanyInfo: [
+				{
+					id: 1,
+					title: "Name",
+					details: "FlixQueue",
+				},
+				{
+					id: 2,
+					title: "Tags",
+					details: "UI/UX Design & Frontend Development",
+				},
+				{
+					id: 3,
+					title: "Website",
+					details: "https://flixqueue.vercel.app/",
+				},
+			],
+			ObjectivesHeading: "Description",
+			ObjectivesDetails:
+				"FlixQueue is a sleek, mobile-friendly web application designed for avid movie and TV show enthusiasts. With a vast library of titles at their fingertips, users can effortlessly explore and discover new favorites. Utilizing intuitive filter methods, users can navigate through trending, top-rated, or popular titles to find the perfect watch. Additionally, FlixQueue offers a personalized experience, allowing users to sign up and curate their own watchlist by adding movies or TV shows they're eager to see, ensuring they never miss out on the latest must-watch content.",
+			Technologies: [
+				{
+					title: "Tools & Technologies",
+					techs: [
+						"JavaScript",
+						"React.js",
+						"Chakra UI",
+						"Firebase Authentication",
+						"Firebase Database",
+						"Vercel",
+					],
+				},
+			],
+			ProjectDetailsHeading: "Overview",
+			ProjectDetails: [
+				{
+					id: 1,
+					heading: "Real-Time Movie and TV Show Data from TMDB API",
+					details:
+						"Accessing real-time movie and TV show data from the TMDB API enhances the functionality of web applications by providing up-to-date information on popular media content. By seamlessly integrating TMDB API into web platforms, developers can leverage its extensive database to enrich user experiences with dynamic content such as movie details, ratings, and recommendations. This integration offers users a comprehensive and engaging platform, enabling them to explore and discover their favorite movies and TV shows effortlessly.",
+				},
+				{
+					id: 2,
+					heading: "Personalize Your Movie & TV Show Watchlist",
+					details:
+						"Empower users to curate their personalized watchlists from a vast array of movie and TV show options through seamless integration with the TMDB API. By incorporating this API into web applications, developers enable users to browse, select, and track their favorite media content in real-time. Leveraging the comprehensive database of TMDB, users can explore diverse genres, discover trending titles, and access detailed information to tailor their viewing preferences. This integration offers an immersive and customizable experience, allowing users to effortlessly manage their entertainment choices and stay updated with the latest releases.",
+				},
+				{
+					id: 3,
+					heading: "Extensive Searching Feature",
+					details:
+						"Enhance user experience with an extensive searching feature powered by the TMDB API, enabling seamless exploration of a vast library of movies and TV shows. By integrating this feature into web applications, developers empower users to discover content based on various criteria such as genre, release date, and ratings. Leveraging the rich dataset provided by TMDB, users can efficiently browse and filter through numerous options to find their desired entertainment. This integration offers a user-friendly and dynamic search experience, allowing users to quickly locate their favorite media content and explore new discoveries with ease.",
+				},
+			],
+			SocialSharingHeading: "Check Out These Links!",
+			SocialSharing: [
+				{
+					id: 1,
+					name: "LinkedIn",
+					icon: <FiLinkedin />,
+					url: "https://www.linkedin.com/in/sirasit-punnanithi/",
+				},
+				{
+					id: 2,
+					name: "Webiste Demo Link",
+					icon: <FiGlobe />,
+					url: "https://flixqueue.vercel.app/",
 				},
 			],
 		},

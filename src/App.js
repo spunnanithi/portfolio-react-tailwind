@@ -26,6 +26,7 @@ function App() {
 		{ path: "projects/calculatorapp", component: <ProjectSingle id={3} /> },
 		{ path: "projects/headgesports", component: <ProjectSingle id={4} /> },
 		{ path: "projects/mydevjourney", component: <ProjectSingle id={5} /> },
+		{ path: "projects/flixqueue", component: <ProjectSingle id={6} /> },
 	];
 
 	return (

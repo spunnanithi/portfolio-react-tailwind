@@ -5,8 +5,16 @@ import conferenceGo from "../images/conference-go-landing.png";
 import calculator from "../images/calculator-empty.png";
 import headgesports from "../images/headgesports-desktop-1.png";
 import mydevjourney from "../images/blog-post-dark.png";
+import flixqueue from "../images/flixqueue-main.png";
 
 export const projectsData = [
+	{
+		title: "FlixQueue",
+		category: "Mobile-Friendly Web Application",
+		img: flixqueue,
+		description:
+			"A movie watchlist application built with React.js, Chakra UI, Firebase Authentication and Database, and deployed on Vercel. Users can explore numerous movies and TV shows acquired from TMDB API and save their favorites to their watchlist.",
+	},
 	{
 		title: "MyDevJourney",
 		category: "Mobile-Friendly Web Application",
