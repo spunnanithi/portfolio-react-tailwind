@@ -1,7 +1,7 @@
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: "I am a dedicated and detail-oriented full-stack software engineer with expertise in developing user-friendly applications using a wide range of technologies, including JavaScript, Python, and React. I have successfully delivered various full-stack projects that solved real-world problems and positively impacted users. My passion for technology drives me to stay updated with the latest industry trends, ensuring I continuously enhance my skills and deliver innovative solutions.",
+		bio: "I am a dedicated and detail-oriented full-stack software engineer with expertise in developing user-friendly applications using a wide range of technologies, including JavaScript/TypeScript, Python, and React. I have successfully delivered various full-stack projects that solved real-world problems and positively impacted users. My passion for technology drives me to stay updated with the latest industry trends, ensuring I continuously enhance my skills and deliver innovative solutions.",
 	},
 	{
 		id: 2,
