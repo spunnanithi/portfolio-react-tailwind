@@ -63,7 +63,7 @@ const AppBanner = () => {
 					}}
 					className="flex justify-center sm:block">
 					<a
-						href="/files/Sirasit_Punnanithi_Software_Engineer_Resume.pdf"
+						href="/files/Sirasit_Punnanithi_Software_Engineer_Resume_Full.pdf"
 						target="_blank"
 						rel="noreferrer"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-40 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-secondary-blue hover:bg-primary-blue text-gray-500 hover:text-white duration-500"
